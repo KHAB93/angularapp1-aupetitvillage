@@ -1,0 +1,65 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<main class="main">
+    <div class="content">
+      <h1>{{title}}</h1>
+      <div class="tri-et-recherche">
+        <div class="tri-produits">
+          <button (click)="sortByPriceAsc()">Trier par prix croissant</button>
+          <button (click)="sortByPriceDesc()">Trier par prix décroissant</button><br>
+          <button (click)="sortByName()">Trier par nom</button>
+          <button (click)="sortByNameDesc()">Trier par nom (inverse)</button>
+        </div>
+        <div class="recherche-produit">
+          <form>
+            <input type="search" placeholder="Rechercher un produit...">
+            <button type="submit">Rechercher</button>
+          </form>
+        </div>
+      </div>
+
+         
+        <div class="presentation">
+            
+            <p>"Au petit village" est une entreprise qui confectionne des figurines inspirées de la bande dessinée Astérix et Obélix.</p><br>
+            <p>Nous sommes une équipe de 5 personnes, nostalique des aventures des célèbres Gaulois.</p><br>
+            <p>Par cette même occasion, nous vous proposons de partager cette aventure avec nous</p>
+        </div>
+
+    <div class="container-fluid">
+        <div class="bloc1">
+            
+          
+              <div class="produits">
+                <div *ngFor="let product of products; trackBy: trackProductById; let i = index ">
+                  <div class="pr1">
+                    <img src="{{ product.image }}" alt="{{ product.name }}">
+                    <h2>{{ product.name }}</h2>
+                    <p>Prix : {{ product.price }}</p>
+                    <button class="ajouter-panier"><a routerLink="/products">Ajouter au panier</a></button>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+   
+</main>
+
+
+
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

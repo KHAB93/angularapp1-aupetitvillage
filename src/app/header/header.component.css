@@ -1,0 +1,82 @@
+.container-fluid{
+    width: 100%;
+    padding: 1Opx;
+    background: white;
+    border-bottom: 2px solid black;
+    box-sizing: border-box; 
+    background-color: #DA001E;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.desktop_menu{
+    margin-top: 40px;
+    text-align: right;
+    font-family: "Comfortaa", sans-serif;
+}
+.desktop_menu ul{
+    padding: 0;
+    margin: 0;
+    color: #151217;
+    }
+    .desktop_menu ul li{
+        list-style-type: none;
+        color: #151217;
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 30px;
+        padding-right: 60px;
+    }
+    .desktop_menu ul li:hover{
+        font-size: 19px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #DA001E;
+        transition: 0.4s ease-in-out;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .mobile_menu {
+        color: #00FF00; /* vert */
+    }
+    .desktop_menu a {
+        color: #151217; /* Change la couleur du texte du lien */
+    }
+    
+    @media screen and (min-width: 128px) and (max-width: 900px) {
+        .desktop_menu {
+            position: fixed;
+            right: 0;
+            top: 64px;
+            background: #eee;
+            width: 280px;
+            height: 100%;
+        }
+        .desktop_menu ul li {
+            display: block;
+            text-align: left;
+            margin: 0;
+            padding: 10px 0 10px 26px;
+            border-bottom: 1px solid grey;
+        }
+        .menu-icon{
+            display: block;
+            color: #151217;
+            font-size: 40px;
+            padding: 10px;
+        }
+        .mobile_menu{
+            right: 0;
+            transition: 0.4s ease-in
+        }
+    }
+    

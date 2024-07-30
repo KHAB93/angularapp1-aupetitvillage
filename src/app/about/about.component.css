@@ -1,0 +1,12 @@
+.content {
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    background-color: #f9d0a3;
+  }
+  
+  .bloc1, .bloc2 {
+    margin: 0 auto;
+    width: 50%; /* ajustez la largeur selon vos besoins */
+    
+  }
+

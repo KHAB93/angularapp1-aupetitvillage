@@ -1,0 +1,99 @@
+.content h1{
+    text-align: center;
+    background-color: #f9d0a3;
+    font-family: 'Bubbleboddy Neue Trial', sans-serif;
+                                                
+}
+.presentation{
+    text-align: center;
+}
+.produits {
+    text-align: center;
+  }
+  .pr1, .pr2, .pr3 {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+  }
+  .pr1 img, .pr2 img, .pr3 img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .pr1 h2, .pr2 h2, .pr3 h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .pr1 p, .pr2 p, .pr3 p {
+    font-size: 14px;
+    color: #666;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .container {
+    display: flex;
+  }
+
+  .tri-et-recherche {
+    float: right;
+  }
+  .tri-produits {
+    margin-bottom: 10px;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .recherche-produit {
+    clear: both;
+  }
+  .recherche-produit {
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 500px;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .recherche-produit input[type="search"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  .recherche-produit button[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .recherche-produit button[type="submit"]:hover {
+    background-color: #444;
+  }
+  .presentation {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%; /* ajustez la largeur à votre convenance */
+    font-family: "Comfortaa", sans-serif;
+  }
+  .ajouter-panier {
+    background-color: #f9d0a3;
+    color: #151217;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Comfortaa", sans-serif;
+  }
+
+  .ajouter-panier a{
+    color: #151217;
+  }
+  .ajouter-panier:hover {
+    background-color: #444;
+    
+  }
